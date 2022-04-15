@@ -25,7 +25,7 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Publish
       run: dotnet publish gitactionapi/gitactionapi.csproj -c Release -o website
-    - name: Checkout 
+    - name: Checkout
       uses: actions/checkout@v2
       
     - name: Login to Docker Hub
